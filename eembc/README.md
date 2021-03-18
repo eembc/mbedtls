@@ -15,9 +15,11 @@
 
 # Running
 
+Be sure to redirect the server output to /dev/null, otherwise it will corrupt the client redirect.
+
 ```
 % cd ../eembc
-% ./launch_server.bash &
+% ./launch_server.bash >& /dev/null
 % ./launch_client.bash > l1.txt
 % fg
 % <ctl-c> // kill server

@@ -46,7 +46,8 @@ while (<>) {
 				die "ERROR: Re-initializing $context (line: $ln)\n";
 			} else {
 				m/mbedtls_(\S+?)[(:_]/; # extract "type"
-				$g_ctx{$context} = $1;
+				my $short = $1;
+				$g_ctx{$context} = $short;
 				$g_context_to_alias{$context} = $g_alias_idx;
 				$g_alias_to_context{$g_alias_idx} = $context;
 				#print "DEBUG: Alias $g_alias_idx ($1) is assigned to $context (line: $ln $_)\n";
@@ -92,6 +93,8 @@ while (<>) {
 		#
 		if (/mbedtls_sha256/) {
 			&process_sha256($_);
+		} elsif (/mbedtls_ccm/) {
+			&process_ccm($_);
 		} elsif (/mbedtls_gcm/) {
 			&process_gcm($_);
 		} elsif (/mbedtls_aes/) {
@@ -101,7 +104,11 @@ while (<>) {
 		} elsif (/mbedtls_ecdsa/) {
 			&process_ecdsa($_);
 		} else {
-			print "WARNING: Not sure what to do with $_ (line $ln)\n";
+			if (/mbedtls_internal_aes/) {
+				# we already know the AES size, so no need to track all 16B calls
+			} else {
+				print "WARNING: Not sure what to do with $_ (line $ln)\n";
+			}
 		}
 	} 
 	#
@@ -126,11 +133,37 @@ sub process_sha256 () {
 	}
 }
 
-sub process_gcm () {
+sub process_ccm () {
 	my $line = shift @_;
-	if ($line =~ /update\((\S+)\):length = (\d+)/) {
+	if ($line =~ /ccm_star.*\((\S+)\):length = (\d+)/) {
 		my ($length, $context) = ($2, $1);
 		if (exists($g_ctx{$context})) {
+			my $short = $g_ctx{$context};
+			# paranoia: make sure enc/dec didn't switch on same context
+			if ($line =~ /encrypt/ and $short !~ /E$/) {
+				$g_ctx{$context} .= '/E';
+			} elsif ($line =~ /decrypt/ and $short !~ /D$/) {
+				$g_ctx{$context} .= '/D';
+			}
+			&post_primitive_event($context, "bytes", $length);
+		} else {
+			die "Cannot add bytes to context $context";
+		}
+	}
+}
+
+sub process_gcm () {
+	my $line = shift @_;
+	if ($line =~ /update\((\S+)\):length = (\d+).*mode = (enc|dec)/) {
+		my ($length, $context) = ($2, $1);
+		if (exists($g_ctx{$context})) {
+			# paranoia: make sure enc/dec didn't switch on same context
+			my $short = $g_ctx{$context};
+			if ($line =~ /= enc/ and $short !~ /E$/) {
+				$g_ctx{$context} .= '/E';
+			} elsif ($line =~ /= dec/ and $short !~ /D$/) {
+				$g_ctx{$context} .= '/D';
+			}
 			&post_primitive_event($context, "bytes", $length);
 		} else {
 			die "Cannot add bytes to context $context";
@@ -143,6 +176,13 @@ sub process_aes () {
 	if ($line =~ /\((\S+)\):size = (\d+)/) {
 		my ($length, $context) = ($2, $1);
 		if (exists($g_ctx{$context})) {
+			# paranoia: make sure enc/dec didn't switch on same context
+			my $short = $g_ctx{$context};
+			if ($line =~ /enc/ and $short !~ /E$/) {
+				$g_ctx{$context} .= '/E';
+			} elsif ($line =~ /dec/ and $short !~ /D$/) {
+				$g_ctx{$context} .= '/D';
+			}
 			&post_primitive_event($context, "bytes", $length);
 		} else {
 			die "Cannot add bytes to context $context";
@@ -228,14 +268,14 @@ if (scalar(keys %g_ctx) > 0) {
 # Now do a fancy print (about 200 columns wide) of each event for each
 # alias at each state in the handshake.
 #
-printf "% 5s,% 8s,% 15s:,", "alias", "type", "context";
+printf "% 5s,% 10s,% 15s:,", "alias", "type", "context";
 foreach my $j (-1, 0 .. 20) {
 	printf "% 6d,", $j;
 }
 print "\n";
 foreach my $alias (sort { $a <=> $b } keys %g_cross) {
 	my $entry = $g_cross{$alias};
-	printf "%05d,% 8s,% 15s:,", $alias, $entry->{'type'}, $g_alias_to_context{$alias};
+	printf "%05d,% 10s,% 15s:,", $alias, $entry->{'type'}, $g_alias_to_context{$alias};
 	foreach my $j (-1, 0 .. 20) {
 		if (exists($entry->{'state'}{$j})) {
 			printf "% 6s,", $entry->{'state'}{$j}{'event'};
