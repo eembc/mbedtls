@@ -87,6 +87,42 @@ while (<>) {
 					$g_clones{$dst} = $src;
 				}
 			}
+		} elsif (/ctr_drbg_context=(\S+) aesecbenc=(\S+)\b/) {
+			my $context = $1;
+			my $aes_ctx = $2;
+			if (exists $g_ctx{$context}) {
+			} else {
+				$g_ctx{$context} = "ctr/aes/E,$2";
+				$g_context_to_alias{$context} = $g_alias_idx;
+				$g_alias_to_context{$g_alias_idx} = $context;
+				print "DEBUG: Alias $g_alias_idx ($1) is assigned to $context (line: $ln $_)\n";
+				++$g_alias_idx;
+			}
+			&post_primitive_event($context, "bytes", 16);
+		} elsif (/block_cipher_df_context=(\S+) aesecbenc=(\S+)\b/) {
+			my $context = $1;
+			my $aes_ctx = $2;
+			if (exists $g_ctx{$context}) {
+			} else {
+				$g_ctx{$context} = "bc/aes/E,$2";
+				$g_context_to_alias{$context} = $g_alias_idx;
+				$g_alias_to_context{$g_alias_idx} = $context;
+				print "DEBUG: Alias $g_alias_idx ($1) is assigned to $context (line: $ln $_)\n";
+				++$g_alias_idx;
+			}
+			&post_primitive_event($context, "bytes", 16);
+		} elsif (/mbedtls_ctr_drbg_random_with_add_context=(\S+) aesecbenc=(\S+)\b/) {
+			my $context = $1;
+			my $aes_ctx = $2;
+			if (exists $g_ctx{$context}) {
+			} else {
+				$g_ctx{$context} = "rand/aes/E,$2";
+				$g_context_to_alias{$context} = $g_alias_idx;
+				$g_alias_to_context{$g_alias_idx} = $context;
+				print "DEBUG: Alias $g_alias_idx ($1) is assigned to $context (line: $ln $_)\n";
+				++$g_alias_idx;
+			}
+			&post_primitive_event($context, "bytes", 16);
 		}
 		#
 		# Now handle the individual primitives
@@ -103,6 +139,12 @@ while (<>) {
 			&process_ecdh($_);
 		} elsif (/mbedtls_ecdsa/) {
 			&process_ecdsa($_);
+		} elsif (/mbedtls_ctr_drbg_random/) {
+			# already handled
+		} elsif (/mbedtls_ctr_drbg_context/) {
+			# already handled
+		} elsif (/block_cipher_df_context/) {
+			# already handled
 		} else {
 			if (/mbedtls_internal_aes/) {
 				# we already know the AES size, so no need to track all 16B calls
@@ -268,14 +310,16 @@ if (scalar(keys %g_ctx) > 0) {
 # Now do a fancy print (about 200 columns wide) of each event for each
 # alias at each state in the handshake.
 #
-printf "% 5s,% 10s,% 15s:,", "alias", "type", "context";
+
+# Use PERL table formatters, dude.
+printf "% 5s,% 30s,% 15s:,", "alias", "type", "context";
 foreach my $j (-1, 0 .. 20) {
 	printf "% 6d,", $j;
 }
 print "\n";
 foreach my $alias (sort { $a <=> $b } keys %g_cross) {
 	my $entry = $g_cross{$alias};
-	printf "%05d,% 10s,% 15s:,", $alias, $entry->{'type'}, $g_alias_to_context{$alias};
+	printf "%05d,% 30s,% 15s:,", $alias, $entry->{'type'}, $g_alias_to_context{$alias};
 	foreach my $j (-1, 0 .. 20) {
 		if (exists($entry->{'state'}{$j})) {
 			printf "% 6s,", $entry->{'state'}{$j}{'event'};

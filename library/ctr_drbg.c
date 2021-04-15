@@ -183,6 +183,7 @@ static int block_cipher_df( unsigned char *output,
             use_len -= ( use_len >= MBEDTLS_CTR_DRBG_BLOCKSIZE ) ?
                        MBEDTLS_CTR_DRBG_BLOCKSIZE : use_len;
 
+            printf("pule: block_cipher_df_context=0x000001 aesecbenc=%p\n", &aes_ctx);
             if( ( ret = mbedtls_aes_crypt_ecb( &aes_ctx, MBEDTLS_AES_ENCRYPT,
                                                chain, chain ) ) != 0 )
             {
@@ -269,6 +270,8 @@ static int ctr_drbg_update_internal( mbedtls_ctr_drbg_context *ctx,
         /*
          * Crypt counter block
          */
+        // defeat the regex, hack
+        printf("pule: mbedtls_ctr_drbg_context=%p aesecbenc=%p\n", ctx, &ctx->aes_ctx);
         if( ( ret = mbedtls_aes_crypt_ecb( &ctx->aes_ctx, MBEDTLS_AES_ENCRYPT,
                                            ctx->counter, p ) ) != 0 )
         {
@@ -555,6 +558,7 @@ int mbedtls_ctr_drbg_random_with_add( void *p_rng,
         /*
          * Crypt counter block
          */
+        printf("pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=%p\n", &ctx->aes_ctx);
         if( ( ret = mbedtls_aes_crypt_ecb( &ctx->aes_ctx, MBEDTLS_AES_ENCRYPT,
                                            ctx->counter, tmp ) ) != 0 )
         {
