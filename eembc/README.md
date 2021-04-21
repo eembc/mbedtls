@@ -26,6 +26,29 @@ Be sure to redirect the server output to /dev/null, otherwise it will corrupt th
 % ./post-process-log.pl l1.txt > c1.txt
 ```
 
+The post processor will now mute SHA calls if used inside ECDSA read/write.
+
+The post processor now includes related calls to AES/ECB contexts for other functions (See the ^(0xAddr) reference in the output)
+
+# Using the symbol decode & dynamic analyzer scripts
+
+Turn on function instrumentation and compile with `ee_stubs.c` to create `trace.log`. Turn off prediction independent executable so that the addresses in `objdump` match the addresses we capture in the trace log.
+
+```
+% export CFLAGS='-finstrument-functions -g'
+% export LDFLAGS='-no-pie'
+```
+
+After compiling you need to start the server in its own directory otherwise the trace.out files (the other is from the client) will overwrite each other!
+
+Create a log filea as before by launching the client script.
+
+```
+% ./launch_client_tls_1_3.bash > log.txt    ; # this also creates trace.out
+% objdump -D ssl/ssl_client2 > objects
+% dynamic-calls-flat.pl objects trace.out          ; # this creates a HUGE flat call graph
+% dynamic-calls-hier.pl objects trace.out          ; # this creates a HUGE hierarchical call graph
+```
 
 # Using `gprof`
 

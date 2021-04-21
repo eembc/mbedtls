@@ -11,6 +11,8 @@ use warnings;
 use strict;
 use Data::Dumper;
 
+my $mute_sha_because_inside_ecdsa = 0;
+
 # This is updated by the primary handshake function
 my $g_current_state = -1;
 
@@ -92,7 +94,7 @@ while (<>) {
 			my $aes_ctx = $2;
 			if (exists $g_ctx{$context}) {
 			} else {
-				$g_ctx{$context} = "ctr/aes/E,$2";
+				$g_ctx{$context} = "ctr/aes/E^$2";
 				$g_context_to_alias{$context} = $g_alias_idx;
 				$g_alias_to_context{$g_alias_idx} = $context;
 				print "DEBUG: Alias $g_alias_idx ($1) is assigned to $context (line: $ln $_)\n";
@@ -104,7 +106,7 @@ while (<>) {
 			my $aes_ctx = $2;
 			if (exists $g_ctx{$context}) {
 			} else {
-				$g_ctx{$context} = "bc/aes/E,$2";
+				$g_ctx{$context} = "bc/aes/E^$2";
 				$g_context_to_alias{$context} = $g_alias_idx;
 				$g_alias_to_context{$g_alias_idx} = $context;
 				print "DEBUG: Alias $g_alias_idx ($1) is assigned to $context (line: $ln $_)\n";
@@ -116,7 +118,7 @@ while (<>) {
 			my $aes_ctx = $2;
 			if (exists $g_ctx{$context}) {
 			} else {
-				$g_ctx{$context} = "rand/aes/E,$2";
+				$g_ctx{$context} = "rand/aes/E^$2";
 				$g_context_to_alias{$context} = $g_alias_idx;
 				$g_alias_to_context{$g_alias_idx} = $context;
 				print "DEBUG: Alias $g_alias_idx ($1) is assigned to $context (line: $ln $_)\n";
@@ -128,7 +130,7 @@ while (<>) {
 		# Now handle the individual primitives
 		#
 		if (/mbedtls_sha256/) {
-			&process_sha256($_);
+			&process_sha256($_) if not $mute_sha_because_inside_ecdsa;
 		} elsif (/mbedtls_ccm/) {
 			&process_ccm($_);
 		} elsif (/mbedtls_gcm/) {
@@ -138,7 +140,10 @@ while (<>) {
 		} elsif (/mbedtls_ecdh/) {
 			&process_ecdh($_);
 		} elsif (/mbedtls_ecdsa/) {
+			$mute_sha_because_inside_ecdsa = 1;
 			&process_ecdsa($_);
+		} elsif (/EXIT/) {
+			$mute_sha_because_inside_ecdsa = 0;
 		} elsif (/mbedtls_ctr_drbg_random/) {
 			# already handled
 		} elsif (/mbedtls_ctr_drbg_context/) {
