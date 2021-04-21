@@ -79,6 +79,8 @@ set(src_crypto
     xtea.c
 )
 
+list(APPEND src_crypto ee_stubs.c)
+
 list(APPEND src_crypto ${thirdparty_src})
 
 set(src_x509

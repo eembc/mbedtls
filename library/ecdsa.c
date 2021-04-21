@@ -785,6 +785,7 @@ int mbedtls_ecdsa_write_signature_restartable( mbedtls_ecdsa_context *ctx,
 cleanup:
     mbedtls_mpi_free( &r );
     mbedtls_mpi_free( &s );
+    printf("\n\npule: EXIT ECDSA WRITE\n");
 
     return( ret );
 }
@@ -898,6 +899,7 @@ int mbedtls_ecdsa_read_signature_restartable( mbedtls_ecdsa_context *ctx,
 cleanup:
     mbedtls_mpi_free( &r );
     mbedtls_mpi_free( &s );
+    printf("\n\npule: EXIT ECDSA READ\n");
 
     return( ret );
 }
