@@ -33,6 +33,7 @@
 #include "mbedtls/platform.h"
 #include "mbedtls/platform_util.h"
 #include "mbedtls/error.h"
+#include "mbedtls/debug.h"
 #if defined(MBEDTLS_PADLOCK_C)
 #include "mbedtls/padlock.h"
 #endif
@@ -512,17 +513,19 @@ static void aes_gen_tables( void )
 
 void mbedtls_aes_init( mbedtls_aes_context *ctx )
 {
+    EE_PRIM_OP_CTX( "aes", "init", ctx );
+
     AES_VALIDATE( ctx != NULL );
-    printf("\npule: mbedtls_aes_init(%p)\n", ctx);
 
     memset( ctx, 0, sizeof( mbedtls_aes_context ) );
 }
 
 void mbedtls_aes_free( mbedtls_aes_context *ctx )
 {
+    EE_PRIM_OP_CTX( "aes", "free", ctx );
+
     if( ctx == NULL )
         return;
-    printf("\n\npule: mbedtls_aes_free(%p)\n", ctx);
 
     mbedtls_platform_zeroize( ctx, sizeof( mbedtls_aes_context ) );
 }
@@ -558,7 +561,6 @@ int mbedtls_aes_setkey_enc( mbedtls_aes_context *ctx, const unsigned char *key,
 
     AES_VALIDATE_RET( ctx != NULL );
     AES_VALIDATE_RET( key != NULL );
-    printf("\n\npule: mbedtls_aes_setkey_enc(%p)\n", ctx);
 
     switch( keybits )
     {
@@ -677,9 +679,6 @@ int mbedtls_aes_setkey_dec( mbedtls_aes_context *ctx, const unsigned char *key,
 
     AES_VALIDATE_RET( ctx != NULL );
     AES_VALIDATE_RET( key != NULL );
-
-    printf("\n\npule: mbedtls_aes_setkey_dec(%p)\n", ctx);
-
 
     mbedtls_aes_init( &cty );
 
@@ -875,7 +874,7 @@ int mbedtls_internal_aes_encrypt( mbedtls_aes_context *ctx,
     int i;
     uint32_t *RK, X0, X1, X2, X3, Y0, Y1, Y2, Y3;
 
-    printf("\n\npule: mbedtls_internal_aes_encrypt(%p):size = 16\n", ctx);
+    EE_PRIM_OP_CTX_BYTES( "aes", "encrypt", ctx, 16 );
 
     RK = ctx->rk;
 
@@ -942,8 +941,6 @@ void mbedtls_aes_encrypt( mbedtls_aes_context *ctx,
                           const unsigned char input[16],
                           unsigned char output[16] )
 {
-        printf("\n\npule: mbedtls_aes_encrypt(%p):size = 16\n", ctx);
-
     mbedtls_internal_aes_encrypt( ctx, input, output );
 }
 #endif /* !MBEDTLS_DEPRECATED_REMOVED */
@@ -958,7 +955,8 @@ int mbedtls_internal_aes_decrypt( mbedtls_aes_context *ctx,
 {
     int i;
     uint32_t *RK, X0, X1, X2, X3, Y0, Y1, Y2, Y3;
-    printf("\n\npule: mbedtls_internal_aes_decrypt(%p):size = 16\n", ctx);
+    
+    EE_PRIM_OP_CTX_BYTES( "aes", "decrypt", ctx, 16 );
 
     RK = ctx->rk;
 
@@ -1025,8 +1023,6 @@ void mbedtls_aes_decrypt( mbedtls_aes_context *ctx,
                           const unsigned char input[16],
                           unsigned char output[16] )
 {
-        printf("\n\npule: mbedtls_aes_decrypt(%p):size = 16\n", ctx);
-
     mbedtls_internal_aes_decrypt( ctx, input, output );
 }
 #endif /* !MBEDTLS_DEPRECATED_REMOVED */
@@ -1044,7 +1040,6 @@ int mbedtls_aes_crypt_ecb( mbedtls_aes_context *ctx,
     AES_VALIDATE_RET( output != NULL );
     AES_VALIDATE_RET( mode == MBEDTLS_AES_ENCRYPT ||
                       mode == MBEDTLS_AES_DECRYPT );
-    printf("\n\npule: mbedtls_aes_crypt_ecb-%s-(%p):size = 16\n", mode == MBEDTLS_AES_ENCRYPT ? "enc" : "dec", ctx);
 
 #if defined(MBEDTLS_AESNI_C) && defined(MBEDTLS_HAVE_X86_64)
     if( mbedtls_aesni_has_support( MBEDTLS_AESNI_AES ) )
@@ -1089,9 +1084,6 @@ int mbedtls_aes_crypt_cbc( mbedtls_aes_context *ctx,
     AES_VALIDATE_RET( iv != NULL );
     AES_VALIDATE_RET( input != NULL );
     AES_VALIDATE_RET( output != NULL );
-
-    printf("\n\npule: mbedtls_aes_crypt_cbc-%s-(%p):length = %ld\n", mode == MBEDTLS_AES_ENCRYPT ? "enc" : "dec", ctx, length);
-
 
     if( length % 16 )
         return( MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH );
@@ -1333,7 +1325,6 @@ int mbedtls_aes_crypt_cfb128( mbedtls_aes_context *ctx,
     AES_VALIDATE_RET( iv != NULL );
     AES_VALIDATE_RET( input != NULL );
     AES_VALIDATE_RET( output != NULL );
-    printf("\n\npule: mbedtls_aes_crypt_cfb128-%s-(%p):length = %ld\n", mode == MBEDTLS_AES_ENCRYPT ? "enc" : "dec", ctx, length);
 
     n = *iv_off;
 
@@ -1391,8 +1382,6 @@ int mbedtls_aes_crypt_cfb8( mbedtls_aes_context *ctx,
     AES_VALIDATE_RET( iv != NULL );
     AES_VALIDATE_RET( input != NULL );
     AES_VALIDATE_RET( output != NULL );
-        printf("\n\npule: mbedtls_aes_crypt_cfb8-%s-(%p):length = %ld\n", mode == MBEDTLS_AES_ENCRYPT ? "enc" : "dec", ctx, length);
-
 
     while( length-- )
     {
@@ -1433,7 +1422,6 @@ int mbedtls_aes_crypt_ofb( mbedtls_aes_context *ctx,
     AES_VALIDATE_RET( iv != NULL );
     AES_VALIDATE_RET( input != NULL );
     AES_VALIDATE_RET( output != NULL );
-    printf("\n\npule: mbedtls_aes_crypt_ctr(%p):length = %ld\n", ctx, length);
 
     n = *iv_off;
 

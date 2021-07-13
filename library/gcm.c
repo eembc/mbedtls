@@ -34,6 +34,7 @@
 #include "mbedtls/gcm.h"
 #include "mbedtls/platform_util.h"
 #include "mbedtls/error.h"
+#include "mbedtls/debug.h"
 
 #include <string.h>
 
@@ -86,8 +87,8 @@
  */
 void mbedtls_gcm_init( mbedtls_gcm_context *ctx )
 {
+    EE_PRIM_OP_CTX( "gcm", "init", ctx );
     GCM_VALIDATE( ctx != NULL );
-    printf("\n\npule: mbedtls_gcm_init(%p)\n", ctx);
     memset( ctx, 0, sizeof( mbedtls_gcm_context ) );
 }
 
@@ -171,7 +172,6 @@ int mbedtls_gcm_setkey( mbedtls_gcm_context *ctx,
     GCM_VALIDATE_RET( key != NULL );
     GCM_VALIDATE_RET( keybits == 128 || keybits == 192 || keybits == 256 );
 
-    printf("\n\npule: mbedtls_gcm_setkey(%p)\n", ctx);
     cipher_info = mbedtls_cipher_info_from_values( cipher, keybits,
                                                    MBEDTLS_MODE_ECB );
     if( cipher_info == NULL )
@@ -546,10 +546,9 @@ int mbedtls_gcm_auth_decrypt( mbedtls_gcm_context *ctx,
 
 void mbedtls_gcm_free( mbedtls_gcm_context *ctx )
 {
+    EE_PRIM_OP_CTX( "gcm", "free", ctx );
     if( ctx == NULL )
         return;
-    
-    printf("\n\npule: mbedtls_gcm_free(%p)\n", ctx);
     mbedtls_cipher_free( &ctx->cipher_ctx );
     mbedtls_platform_zeroize( ctx, sizeof( mbedtls_gcm_context ) );
 }

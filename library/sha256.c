@@ -29,6 +29,7 @@
 #include "mbedtls/sha256.h"
 #include "mbedtls/platform_util.h"
 #include "mbedtls/error.h"
+#include "mbedtls/debug.h"
 
 #include <string.h>
 
@@ -75,16 +76,16 @@ do {                                                    \
 
 void mbedtls_sha256_init( mbedtls_sha256_context *ctx )
 {
+    EE_PRIM_OP_CTX( "sha256", "init", ctx );
     SHA256_VALIDATE( ctx != NULL );
-printf("\npule: mbedtls_sha256_init(%p)\n", ctx);
     memset( ctx, 0, sizeof( mbedtls_sha256_context ) );
 }
 
 void mbedtls_sha256_free( mbedtls_sha256_context *ctx )
 {
+    EE_PRIM_OP_CTX( "sha256", "free", ctx );
     if( ctx == NULL )
         return;
-    printf("\n\npule: mbedtls_sha256_free(%p)\n", ctx);
 
     mbedtls_platform_zeroize( ctx, sizeof( mbedtls_sha256_context ) );
 }
@@ -92,10 +93,9 @@ void mbedtls_sha256_free( mbedtls_sha256_context *ctx )
 void mbedtls_sha256_clone( mbedtls_sha256_context *dst,
                            const mbedtls_sha256_context *src )
 {
+    EE_PRIM_OP_CTX_CTX( "sha256", "clone", src, dst );
     SHA256_VALIDATE( dst != NULL );
     SHA256_VALIDATE( src != NULL );
-    printf("\n\npule: mbedtls_sha256_clone(%p -> %p)\n", src, dst);
-
     *dst = *src;
 }
 
@@ -106,8 +106,6 @@ int mbedtls_sha256_starts_ret( mbedtls_sha256_context *ctx, int is224 )
 {
     SHA256_VALIDATE_RET( ctx != NULL );
     SHA256_VALIDATE_RET( is224 == 0 || is224 == 1 );
-
-    printf("\n\npule: mbedtls_sha256_starts(%p)\n", ctx);
 
     ctx->total[0] = 0;
     ctx->total[1] = 0;
@@ -278,10 +276,10 @@ int mbedtls_sha256_update_ret( mbedtls_sha256_context *ctx,
     size_t fill;
     uint32_t left;
 
+    EE_PRIM_OP_CTX_BYTES( "sha256", "update", ctx, ilen );
+
     SHA256_VALIDATE_RET( ctx != NULL );
     SHA256_VALIDATE_RET( ilen == 0 || input != NULL );
-
-    printf("\n\npule: mbedtls_sha256_update:ilen = %ld (%p)\n", ilen, ctx);
 
     if( ilen == 0 )
         return( 0 );
@@ -343,8 +341,6 @@ int mbedtls_sha256_finish_ret( mbedtls_sha256_context *ctx,
 
     SHA256_VALIDATE_RET( ctx != NULL );
     SHA256_VALIDATE_RET( (unsigned char *)output != NULL );
-
-    printf("\n\npule: mbedtls_sha256_finish(%p)\n", ctx);
 
     /*
      * Add padding: 0x80 then 0x00 until 8 bytes remain for the length
@@ -419,8 +415,6 @@ int mbedtls_sha256_ret( const unsigned char *input,
 {
     int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
     mbedtls_sha256_context ctx;
-
-    printf("\n\npule: mbedtls_sha256:ilen = %ld\n", ilen);
 
     SHA256_VALIDATE_RET( is224 == 0 || is224 == 1 );
     SHA256_VALIDATE_RET( ilen == 0 || input != NULL );

@@ -139,7 +139,7 @@ while (<>) {
 			&process_aes($_);
 		} elsif (/mbedtls_ecdh/) {
 			&process_ecdh($_);
-		} elsif (/mbedtls_ecdsa/) {
+		} elsif (/mbedtls_ecdsa/) { # THIS IS BUGGED BECAUSE IT TURNS OFF SHA ON INIT & FREE!!! BUGBUG
 			$mute_sha_because_inside_ecdsa = 1;
 			&process_ecdsa($_);
 		} elsif (/EXIT/) {

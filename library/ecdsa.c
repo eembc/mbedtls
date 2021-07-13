@@ -46,6 +46,7 @@
 
 #include "mbedtls/platform_util.h"
 #include "mbedtls/error.h"
+#include "mbedtls/debug.h"
 
 /* Parameter validation macros based on platform_util.h */
 #define ECDSA_VALIDATE_RET( cond )    \
@@ -259,8 +260,6 @@ static int ecdsa_sign_restartable( mbedtls_ecp_group *grp,
     mbedtls_mpi k, e, t;
     mbedtls_mpi *pk = &k, *pr = r;
 
-    printf("\n\npule: mbedtls_ecdsa_sign:blen = %ld\n", blen);
-    
     /* Fail cleanly on curves such as Curve25519 that can't be used for ECDSA */
     if( ! mbedtls_ecdsa_can_do( grp->id ) || grp->N.p == NULL )
         return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
@@ -560,7 +559,6 @@ int mbedtls_ecdsa_sign_det( mbedtls_ecp_group *grp, mbedtls_mpi *r,
     ECDSA_VALIDATE_RET( s     != NULL );
     ECDSA_VALIDATE_RET( d     != NULL );
     ECDSA_VALIDATE_RET( buf   != NULL || blen == 0 );
-    printf("\n\npule: mbedtls_ecdsa_sign_det:blen = %ld\n", blen);
     
     return( ecdsa_sign_det_restartable( grp, r, s, d, buf, blen, md_alg,
                                         NULL, NULL, NULL ) );
@@ -711,8 +709,7 @@ int mbedtls_ecdsa_verify( mbedtls_ecp_group *grp,
     ECDSA_VALIDATE_RET( r   != NULL );
     ECDSA_VALIDATE_RET( s   != NULL );
     ECDSA_VALIDATE_RET( buf != NULL || blen == 0 );
-    printf("\n\npule: mbedtls_ecdsa_verify:blen = %ld\n", blen);
-    
+
     return( ecdsa_verify_restartable( grp, buf, blen, Q, r, s, NULL ) );
 }
 #endif /* !MBEDTLS_ECDSA_VERIFY_ALT */
@@ -727,7 +724,6 @@ static int ecdsa_signature_to_asn1( const mbedtls_mpi *r, const mbedtls_mpi *s,
     unsigned char buf[MBEDTLS_ECDSA_MAX_LEN];
     unsigned char *p = buf + sizeof( buf );
     size_t len = 0;
-    printf("\n\npule: ecdsa_signature_to_asn1:slen = %ld\n", *slen);
     MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_mpi( &p, buf, s ) );
     MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_mpi( &p, buf, r ) );
 
@@ -758,7 +754,6 @@ int mbedtls_ecdsa_write_signature_restartable( mbedtls_ecdsa_context *ctx,
     ECDSA_VALIDATE_RET( hash != NULL );
     ECDSA_VALIDATE_RET( sig  != NULL );
     ECDSA_VALIDATE_RET( slen != NULL );
-    printf("\n\npule: mbedtls_ecdsa_write_signature(%p):hlen = %ld slen = %ld\n", ctx, hlen, *slen);
     mbedtls_mpi_init( &r );
     mbedtls_mpi_init( &s );
 
@@ -785,7 +780,7 @@ int mbedtls_ecdsa_write_signature_restartable( mbedtls_ecdsa_context *ctx,
 cleanup:
     mbedtls_mpi_free( &r );
     mbedtls_mpi_free( &s );
-    printf("\n\npule: EXIT ECDSA WRITE\n");
+    EE_PRIM_OP_CTX( "ecdsa", "write_signature-EXIT", ctx );
 
     return( ret );
 }
@@ -800,6 +795,7 @@ int mbedtls_ecdsa_write_signature( mbedtls_ecdsa_context *ctx,
                                  int (*f_rng)(void *, unsigned char *, size_t),
                                  void *p_rng )
 {
+    EE_PRIM_OP_CTX( "ecdsa", "write_signature", ctx );
     ECDSA_VALIDATE_RET( ctx  != NULL );
     ECDSA_VALIDATE_RET( hash != NULL );
     ECDSA_VALIDATE_RET( sig  != NULL );
@@ -815,11 +811,11 @@ int mbedtls_ecdsa_write_signature_det( mbedtls_ecdsa_context *ctx,
                                unsigned char *sig, size_t *slen,
                                mbedtls_md_type_t md_alg )
 {
+    EE_PRIM_OP_CTX( "ecdsa", "write_signature_det", ctx );
     ECDSA_VALIDATE_RET( ctx  != NULL );
     ECDSA_VALIDATE_RET( hash != NULL );
     ECDSA_VALIDATE_RET( sig  != NULL );
     ECDSA_VALIDATE_RET( slen != NULL );
-    printf("\n\npule: mbedtls_ecdsa_write_signature_det(%p):hlen = %ld slen = %ld\n", ctx, hlen, *slen);
     return( mbedtls_ecdsa_write_signature( ctx, md_alg, hash, hlen, sig, slen,
                                    NULL, NULL ) );
 }
@@ -832,10 +828,10 @@ int mbedtls_ecdsa_read_signature( mbedtls_ecdsa_context *ctx,
                           const unsigned char *hash, size_t hlen,
                           const unsigned char *sig, size_t slen )
 {
+    EE_PRIM_OP_CTX( "ecdsa", "read_signature", ctx );
     ECDSA_VALIDATE_RET( ctx  != NULL );
     ECDSA_VALIDATE_RET( hash != NULL );
     ECDSA_VALIDATE_RET( sig  != NULL );
-    printf("\n\npule: mbedtls_ecdsa_read_signature(%p):hlen = %ld slen = %ld\n", ctx, hlen, slen);    
     return( mbedtls_ecdsa_read_signature_restartable(
                 ctx, hash, hlen, sig, slen, NULL ) );
 }
@@ -899,7 +895,7 @@ int mbedtls_ecdsa_read_signature_restartable( mbedtls_ecdsa_context *ctx,
 cleanup:
     mbedtls_mpi_free( &r );
     mbedtls_mpi_free( &s );
-    printf("\n\npule: EXIT ECDSA READ\n");
+    EE_PRIM_OP_CTX( "ecdsa", "read_signature-EXIT", ctx );
 
     return( ret );
 }
@@ -914,7 +910,6 @@ int mbedtls_ecdsa_genkey( mbedtls_ecdsa_context *ctx, mbedtls_ecp_group_id gid,
     int ret = 0;
     ECDSA_VALIDATE_RET( ctx   != NULL );
     ECDSA_VALIDATE_RET( f_rng != NULL );
-    printf("\n\npule: mbedtls_ecdsa_from_keypair*(%p)\n", ctx);
     
     ret = mbedtls_ecp_group_load( &ctx->grp, gid );
     if( ret != 0 )
@@ -949,8 +944,8 @@ int mbedtls_ecdsa_from_keypair( mbedtls_ecdsa_context *ctx, const mbedtls_ecp_ke
  */
 void mbedtls_ecdsa_init( mbedtls_ecdsa_context *ctx )
 {
+    EE_PRIM_OP_CTX( "ecdsa", "init", ctx );
     ECDSA_VALIDATE( ctx != NULL );
-    printf("\n\npule: mbedtls_ecdsa_init(%p)\n", ctx);
     mbedtls_ecp_keypair_init( ctx );
 }
 
@@ -959,10 +954,9 @@ void mbedtls_ecdsa_init( mbedtls_ecdsa_context *ctx )
  */
 void mbedtls_ecdsa_free( mbedtls_ecdsa_context *ctx )
 {
+    EE_PRIM_OP_CTX( "ecdsa", "free", ctx );
     if( ctx == NULL )
         return;
-    printf("\n\npule: mbedtls_ecdsa_free(%p)\n", ctx);
-    
     mbedtls_ecp_keypair_free( ctx );
 }
 

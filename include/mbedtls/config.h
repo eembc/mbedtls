@@ -52,7 +52,7 @@
 *
 * Comment to disable the use of assembly code.
 */
-// #define MBEDTLS_HAVE_ASM
+//#define MBEDTLS_HAVE_ASM
 /**
 * \def MBEDTLS_NO_UDBL_DIVISION
 *
@@ -1365,7 +1365,7 @@
 *
 * Uncomment to enable support for record checking.
 */
-// #define MBEDTLS_SSL_RECORD_CHECKING
+//#define MBEDTLS_SSL_RECORD_CHECKING
 /**
 * \def MBEDTLS_SSL_DTLS_CONNECTION_ID
 *

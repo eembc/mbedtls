@@ -32,6 +32,7 @@
 
 #include "mbedtls/ccm.h"
 #include "mbedtls/platform_util.h"
+#include "mbedtls/debug.h"
 #include "mbedtls/error.h"
 
 #include <string.h>
@@ -60,9 +61,9 @@
  */
 void mbedtls_ccm_init( mbedtls_ccm_context *ctx )
 {
+    EE_PRIM_OP_CTX( "ccm", "init", ctx );
     CCM_VALIDATE( ctx != NULL );
     memset( ctx, 0, sizeof( mbedtls_ccm_context ) );
-    printf("\n\npule: mbedtls_ccm_init(%p)\n", ctx);
 }
 
 int mbedtls_ccm_setkey( mbedtls_ccm_context *ctx,
@@ -72,7 +73,6 @@ int mbedtls_ccm_setkey( mbedtls_ccm_context *ctx,
 {
     int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
     const mbedtls_cipher_info_t *cipher_info;
-    printf("\n\npule: mbedtls_ccm_setkey(%p)\n", ctx);
 
     CCM_VALIDATE_RET( ctx != NULL );
     CCM_VALIDATE_RET( key != NULL );
@@ -104,9 +104,9 @@ int mbedtls_ccm_setkey( mbedtls_ccm_context *ctx,
  */
 void mbedtls_ccm_free( mbedtls_ccm_context *ctx )
 {
+    EE_PRIM_OP_CTX( "ccm", "free", ctx );
     if( ctx == NULL )
         return;
-    printf("\n\npule: mbedtls_ccm_free(%p)\n", ctx);
     mbedtls_cipher_free( &ctx->cipher_ctx );
     mbedtls_platform_zeroize( ctx, sizeof( mbedtls_ccm_context ) );
 }
@@ -326,13 +326,13 @@ int mbedtls_ccm_star_encrypt_and_tag( mbedtls_ccm_context *ctx, size_t length,
                          const unsigned char *input, unsigned char *output,
                          unsigned char *tag, size_t tag_len )
 {
+    EE_PRIM_OP_CTX_BYTES( "ccm", "encrypt", ctx, length );
     CCM_VALIDATE_RET( ctx != NULL );
     CCM_VALIDATE_RET( iv != NULL );
     CCM_VALIDATE_RET( add_len == 0 || add != NULL );
     CCM_VALIDATE_RET( length == 0 || input != NULL );
     CCM_VALIDATE_RET( length == 0 || output != NULL );
     CCM_VALIDATE_RET( tag_len == 0 || tag != NULL );
-    printf("\n\npule: mbedtls_ccm_star_encrypt_and_tag(%p):length = %ld add_len = %ld tag_len=%ld\n", ctx, length, add_len, tag_len);
     return( ccm_auth_crypt( ctx, CCM_ENCRYPT, length, iv, iv_len,
                             add, add_len, input, output, tag, tag_len ) );
 }
@@ -349,7 +349,6 @@ int mbedtls_ccm_encrypt_and_tag( mbedtls_ccm_context *ctx, size_t length,
     CCM_VALIDATE_RET( length == 0 || input != NULL );
     CCM_VALIDATE_RET( length == 0 || output != NULL );
     CCM_VALIDATE_RET( tag_len == 0 || tag != NULL );
-    printf("\n\npule: mbedtls_ccm_encrypt_and_tag(%p):length = %ld add_len = %ld tag_len=%ld\n", ctx, length, add_len, tag_len);
     if( tag_len == 0 )
         return( MBEDTLS_ERR_CCM_BAD_INPUT );
 
@@ -371,13 +370,14 @@ int mbedtls_ccm_star_auth_decrypt( mbedtls_ccm_context *ctx, size_t length,
     unsigned char i;
     int diff;
 
+    EE_PRIM_OP_CTX_BYTES( "ccm", "decrypt", ctx, length );
+
     CCM_VALIDATE_RET( ctx != NULL );
     CCM_VALIDATE_RET( iv != NULL );
     CCM_VALIDATE_RET( add_len == 0 || add != NULL );
     CCM_VALIDATE_RET( length == 0 || input != NULL );
     CCM_VALIDATE_RET( length == 0 || output != NULL );
     CCM_VALIDATE_RET( tag_len == 0 || tag != NULL );
-    printf("\n\npule: mbedtls_ccm_star_auth_decrypt(%p):length = %ld add_len = %ld tag_len=%ld\n", ctx, length, add_len, tag_len);
 
     if( ( ret = ccm_auth_crypt( ctx, CCM_DECRYPT, length,
                                 iv, iv_len, add, add_len,
@@ -414,7 +414,6 @@ int mbedtls_ccm_auth_decrypt( mbedtls_ccm_context *ctx, size_t length,
 
     if( tag_len == 0 )
         return( MBEDTLS_ERR_CCM_BAD_INPUT );
-    printf("\n\npule: mbedtls_ccm_auth_decrypt(%p):length = %ld add_len = %ld tag_len=%ld\n", ctx, length, add_len, tag_len);
 
     return( mbedtls_ccm_star_auth_decrypt( ctx, length, iv, iv_len, add,
                 add_len, input, output, tag, tag_len ) );
