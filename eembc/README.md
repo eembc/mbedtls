@@ -23,7 +23,7 @@ Be sure to redirect the server output to /dev/null, otherwise it will corrupt th
 % ./launch_client.bash > l1.txt
 % fg
 % <ctl-c> // kill server
-% ./post-process-log.pl l1.txt > c1.txt
+% ./process.py l1.txt > c1.txt
 ```
 
 The post processor will now mute SHA calls if used inside ECDSA read/write.

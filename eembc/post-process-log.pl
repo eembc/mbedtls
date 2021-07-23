@@ -319,7 +319,7 @@ if (scalar(keys %g_ctx) > 0) {
 # Use PERL table formatters, dude.
 printf "% 5s,% 30s,% 15s:,", "alias", "type", "context";
 foreach my $j (-1, 0 .. 20) {
-	printf "% 6d,", $j;
+	printf "% 5d,", $j;
 }
 print "\n";
 foreach my $alias (sort { $a <=> $b } keys %g_cross) {
@@ -327,9 +327,9 @@ foreach my $alias (sort { $a <=> $b } keys %g_cross) {
 	printf "%05d,% 30s,% 15s:,", $alias, $entry->{'type'}, $g_alias_to_context{$alias};
 	foreach my $j (-1, 0 .. 20) {
 		if (exists($entry->{'state'}{$j})) {
-			printf "% 6s,", $entry->{'state'}{$j}{'event'};
+			printf "% 5s,", $entry->{'state'}{$j}{'event'};
 		} else {
-			printf "% 6s,", " ";
+			printf "% 5s,", " ";
 		}
 	}
 	print "\n";

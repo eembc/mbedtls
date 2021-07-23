@@ -189,12 +189,16 @@ for line in file:
             process_inst(line)
 
 #print(scoreboard)
+print("% 5s,% 30s,% 15s:," % ("alias", "type", "context"), end="")
+for i in range (-1, 20):
+    print("% 5d," % i, end="")
+print("")
 
 for id in sorted(scoreboard):
     print("%05d,% 30s,% 16s," % (int(id), aliases.purpose(id), aliases.ctx(id)), end="")
     for i in range(-1, 20):
         if i in scoreboard[id]:
-            print("% 6s," % str(scoreboard[id][i]), end="")
+            print("% 5s," % str(scoreboard[id][i]), end="")
         else:
-            print("% 6s," % " ", end="")
+            print("% 5s," % " ", end="")
     print()
