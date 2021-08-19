@@ -1,0 +1,4350 @@
+Number of curves: 1
+Number of signature algorithms: 1
+
+  . Seeding the random number generator...
+pule: mbedtls_sha256_init(0x7ffcc6301da4)
+
+pule: mbedtls_aes_init(0x7ffcc6301ad8)
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+
+
+pule: mbedtls_sha256:ilen = 128
+
+pule: mbedtls_sha256_init(0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_update:ilen = 128 (0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 2 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 2 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 8 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6301da4)
+
+pule: mbedtls_sha256_init(0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256:ilen = 32
+
+pule: mbedtls_sha256_init(0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256:ilen = 128
+
+pule: mbedtls_sha256_init(0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_update:ilen = 128 (0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300e30)
+
+
+pule: mbedtls_sha256_update:ilen = 2 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 2 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 8 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6301da4)
+
+pule: mbedtls_sha256_init(0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x7ffcc6301da4)
+
+
+pule: mbedtls_sha256:ilen = 32
+
+pule: mbedtls_sha256_init(0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300f80)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300f80)
+
+pule: mbedtls_aes_init(0x7ffcc6300d50)
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6300d50)
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+pule: block_cipher_df_context=0x000001 aesecbenc=0x7ffcc6300d50
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6300d50)
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6300d50):size = 16
+
+
+pule: mbedtls_aes_free(0x7ffcc6300d50)
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+ ok
+  . Loading the CA root certificate ... ok (0 skipped)
+  . Loading the client cert. and key... ok (key type: EC)
+  . Connecting to tcp/127.0.0.1/4433... ok
+  . Setting up the SSL/TLS structure...
+pule: mbedtls_sha256_init(0x558042986f78)
+
+
+pule: mbedtls_sha256_starts(0x558042986f78)
+
+
+pule: mbedtls_ecdh_init(0x558042986cb8)
+ ok
+  . Performing the SSL/TLS handshake...client state: 0
+client state: 1
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+
+
+pule: mbedtls_ecdh_make_params(0x558042986cb8):olen = 94009361443309 blen = 16384
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+
+
+pule: mbedtls_sha256_update:ilen = 163 (0x558042986f78)
+client state: 2
+
+
+pule: mbedtls_sha256_update:ilen = 117 (0x558042986f78)
+
+
+pule: mbedtls_ecdh_read_params(0x558042986cb8)
+client state: 14
+
+
+pule: mbedtls_ecdh_calc_secret(0x558042986cb8):olen = 94009361426801 blen = 66
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+
+pule: mbedtls_sha256_init(0x5580429875f0)
+
+
+pule: mbedtls_sha256_starts(0x5580429875f0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x5580429875f0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x5580429875f0)
+
+
+pule: mbedtls_sha256_finish(0x5580429875f0)
+
+
+pule: mbedtls_sha256_starts(0x5580429875f0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x5580429875f0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x5580429875f0)
+
+
+pule: mbedtls_sha256_finish(0x5580429875f0)
+
+
+pule: mbedtls_sha256_free(0x5580429875f0)
+
+
+pule: mbedtls_sha256:ilen = 0
+
+pule: mbedtls_sha256_init(0x7ffcc6300e20)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300e20)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x7ffcc6300e20)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300e20)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300e20)
+
+pule: mbedtls_sha256_init(0x558042988ba0)
+
+
+pule: mbedtls_sha256_starts(0x558042988ba0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988ba0)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042988ba0)
+
+
+pule: mbedtls_sha256_update:ilen = 49 (0x558042988ba0)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042988ba0)
+
+
+pule: mbedtls_sha256_finish(0x558042988ba0)
+
+
+pule: mbedtls_sha256_starts(0x558042988ba0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988ba0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042988ba0)
+
+
+pule: mbedtls_sha256_finish(0x558042988ba0)
+
+
+pule: mbedtls_sha256_free(0x558042988ba0)
+
+pule: mbedtls_sha256_init(0x558042988cb0)
+
+
+pule: mbedtls_sha256_starts(0x558042988cb0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988cb0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042988cb0)
+
+
+pule: mbedtls_sha256_finish(0x558042988cb0)
+
+
+pule: mbedtls_sha256_starts(0x558042988cb0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988cb0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042988cb0)
+
+
+pule: mbedtls_sha256_finish(0x558042988cb0)
+
+
+pule: mbedtls_sha256_free(0x558042988cb0)
+
+
+pule: mbedtls_sha256:ilen = 0
+
+pule: mbedtls_sha256_init(0x7ffcc6300e20)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300e20)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x7ffcc6300e20)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300e20)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300e20)
+
+pule: mbedtls_sha256_init(0x558042988dc0)
+
+
+pule: mbedtls_sha256_starts(0x558042988dc0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988dc0)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042988dc0)
+
+
+pule: mbedtls_sha256_update:ilen = 49 (0x558042988dc0)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042988dc0)
+
+
+pule: mbedtls_sha256_finish(0x558042988dc0)
+
+
+pule: mbedtls_sha256_starts(0x558042988dc0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988dc0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042988dc0)
+
+
+pule: mbedtls_sha256_finish(0x558042988dc0)
+
+
+pule: mbedtls_sha256_free(0x558042988dc0)
+
+pule: mbedtls_sha256_init(0x558042988ed0)
+
+
+pule: mbedtls_sha256_starts(0x558042988ed0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988ed0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042988ed0)
+
+
+pule: mbedtls_sha256_finish(0x558042988ed0)
+
+
+pule: mbedtls_sha256_starts(0x558042988ed0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988ed0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042988ed0)
+
+
+pule: mbedtls_sha256_finish(0x558042988ed0)
+
+
+pule: mbedtls_sha256_free(0x558042988ed0)
+
+
+pule: mbedtls_sha256_clone(0x558042986f78 -> 0x7ffcc6301050)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6301050)
+
+pule: mbedtls_sha256_init(0x558042988fe0)
+
+
+pule: mbedtls_sha256_starts(0x558042988fe0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988fe0)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042988fe0)
+
+
+pule: mbedtls_sha256_update:ilen = 54 (0x558042988fe0)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042988fe0)
+
+
+pule: mbedtls_sha256_finish(0x558042988fe0)
+
+
+pule: mbedtls_sha256_starts(0x558042988fe0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042988fe0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042988fe0)
+
+
+pule: mbedtls_sha256_finish(0x558042988fe0)
+
+
+pule: mbedtls_sha256_free(0x558042988fe0)
+
+pule: mbedtls_sha256_init(0x5580429890f0)
+
+
+pule: mbedtls_sha256_starts(0x5580429890f0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x5580429890f0)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x5580429890f0)
+
+
+pule: mbedtls_sha256_update:ilen = 54 (0x5580429890f0)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x5580429890f0)
+
+
+pule: mbedtls_sha256_finish(0x5580429890f0)
+
+
+pule: mbedtls_sha256_starts(0x5580429890f0)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x5580429890f0)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x5580429890f0)
+
+
+pule: mbedtls_sha256_finish(0x5580429890f0)
+
+
+pule: mbedtls_sha256_free(0x5580429890f0)
+
+pule: mbedtls_sha256_init(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 52 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_free(0x558042987700)
+
+pule: mbedtls_sha256_init(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 13 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_free(0x558042987700)
+
+pule: mbedtls_sha256_init(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 13 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_free(0x558042987700)
+
+pule: mbedtls_sha256_init(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 12 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_free(0x558042987700)
+
+pule: mbedtls_sha256_init(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 12 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_starts(0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042987700)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042987700)
+
+
+pule: mbedtls_sha256_finish(0x558042987700)
+
+
+pule: mbedtls_sha256_free(0x558042987700)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6301050)
+
+
+pule: mbedtls_ccm_init(0x558042987de0)
+
+
+pule: mbedtls_ccm_init(0x5580429887b0)
+
+
+pule: mbedtls_ccm_setkey(0x558042987de0)
+
+pule: mbedtls_aes_init(0x558042988850)
+
+
+pule: mbedtls_aes_setkey_enc(0x558042988850)
+
+
+pule: mbedtls_ccm_setkey(0x5580429887b0)
+
+pule: mbedtls_aes_init(0x5580429889c0)
+
+
+pule: mbedtls_aes_setkey_enc(0x5580429889c0)
+
+
+pule: mbedtls_ccm_auth_decrypt(0x5580429887b0):length = 11 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_auth_decrypt(0x5580429887b0):length = 11 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_sha256_update:ilen = 10 (0x558042986f78)
+client state: 6
+
+
+pule: mbedtls_ccm_auth_decrypt(0x5580429887b0):length = 16 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_auth_decrypt(0x5580429887b0):length = 16 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_sha256_update:ilen = 15 (0x558042986f78)
+client state: 7
+
+
+pule: mbedtls_ccm_auth_decrypt(0x5580429887b0):length = 301 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_auth_decrypt(0x5580429887b0):length = 301 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_sha256_update:ilen = 300 (0x558042986f78)
+
+
+pule: mbedtls_sha256:ilen = 197
+
+pule: mbedtls_sha256_init(0x7ffcc6300d70)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300d70)
+
+
+pule: mbedtls_sha256_update:ilen = 197 (0x7ffcc6300d70)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300d70)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300d70)
+
+
+pule: mbedtls_ecdsa_init(0x7ffcc6300be0)
+
+
+pule: mbedtls_ecdsa_read_signature(0x7ffcc6300be0):hlen = 32 slen = 71
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+
+pule: EXIT ECDSA READ
+
+
+pule: mbedtls_ecdsa_free(0x7ffcc6300be0)
+client state: 8
+
+pule: mbedtls_sha256_init(0x7ffcc6301050)
+
+
+pule: mbedtls_sha256_clone(0x558042986f78 -> 0x7ffcc6301050)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6301050)
+
+
+pule: mbedtls_sha256:ilen = 130
+
+pule: mbedtls_sha256_init(0x7ffcc6300f60)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300f60)
+
+
+pule: mbedtls_sha256_update:ilen = 130 (0x7ffcc6300f60)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300f60)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300f60)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6301050)
+
+
+pule: mbedtls_ccm_auth_decrypt(0x5580429887b0):length = 79 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_auth_decrypt(0x5580429887b0):length = 79 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_sha256_update:ilen = 78 (0x558042986f78)
+
+
+pule: mbedtls_ecdsa_init(0x7ffcc6300f80)
+
+
+pule: mbedtls_ecdsa_read_signature(0x7ffcc6300f80):hlen = 32 slen = 70
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+
+pule: EXIT ECDSA READ
+
+
+pule: mbedtls_ecdsa_free(0x7ffcc6300f80)
+client state: 9
+
+pule: mbedtls_sha256_init(0x7ffcc6301120)
+
+
+pule: mbedtls_sha256_clone(0x558042986f78 -> 0x7ffcc6301120)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6301120)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 18 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 18 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6301120)
+
+
+pule: mbedtls_ccm_auth_decrypt(0x5580429887b0):length = 37 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_auth_decrypt(0x5580429887b0):length = 37 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x5580429889c0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x5580429889c0):size = 16
+
+
+pule: mbedtls_sha256_update:ilen = 36 (0x558042986f78)
+
+pule: mbedtls_sha256_init(0x7ffcc6301170)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6301170)
+
+
+pule: mbedtls_sha256_clone(0x558042986f78 -> 0x7ffcc6301170)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6301170)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6301170)
+client state: 11
+
+
+pule: mbedtls_sha256_update:ilen = 298 (0x558042986f78)
+
+
+pule: mbedtls_ccm_encrypt_and_tag(0x558042987de0):length = 299 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_encrypt_and_tag(0x558042987de0):length = 299 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+client state: 12
+
+pule: mbedtls_sha256_init(0x7ffcc6300fc0)
+
+
+pule: mbedtls_sha256_clone(0x558042986f78 -> 0x7ffcc6300fc0)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300fc0)
+
+
+pule: mbedtls_sha256:ilen = 130
+
+pule: mbedtls_sha256_init(0x7ffcc6300ed0)
+
+
+pule: mbedtls_sha256_starts(0x7ffcc6300ed0)
+
+
+pule: mbedtls_sha256_update:ilen = 130 (0x7ffcc6300ed0)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300ed0)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300ed0)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300fc0)
+
+
+pule: mbedtls_ecdsa_init(0x7ffcc6300f20)
+
+
+pule: mbedtls_ecdsa_write_signature(0x7ffcc6300f20):hlen = 32 slen = 0
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_ecdsa_sign:blen = 32
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_random_with_add_context=0x000002 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+pule: mbedtls_ctr_drbg_context=0x7ffcc6301ab0 aesecbenc=0x7ffcc6301ad8
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x7ffcc6301ad8):size = 16
+
+
+pule: mbedtls_aes_setkey_enc(0x7ffcc6301ad8)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+
+pule: ecdsa_signature_to_asn1:slen = 0
+
+
+pule: EXIT ECDSA WRITE
+
+
+pule: mbedtls_ecdsa_free(0x7ffcc6300f20)
+
+
+pule: mbedtls_sha256_update:ilen = 78 (0x558042986f78)
+
+
+pule: mbedtls_ccm_encrypt_and_tag(0x558042987de0):length = 79 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_encrypt_and_tag(0x558042987de0):length = 79 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+client state: 13
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 54 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 54 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 13 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 13 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 12 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 12 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x7ffcc63010b0)
+
+
+pule: mbedtls_sha256_clone(0x558042986f78 -> 0x7ffcc63010b0)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc63010b0)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 18 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 18 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x7ffcc63010b0)
+
+pule: mbedtls_sha256_init(0x7ffcc63010b0)
+
+
+pule: mbedtls_sha256_clone(0x558042986f78 -> 0x7ffcc63010b0)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc63010b0)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 18 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 18 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x7ffcc63010b0)
+
+
+pule: mbedtls_sha256_update:ilen = 36 (0x558042986f78)
+
+
+pule: mbedtls_ccm_encrypt_and_tag(0x558042987de0):length = 37 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_encrypt_and_tag(0x558042987de0):length = 37 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x558042988850):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x558042988850):size = 16
+
+
+pule: mbedtls_sha256_clone(0x558042986f78 -> 0x7ffcc6300ff0)
+
+
+pule: mbedtls_sha256_finish(0x7ffcc6300ff0)
+
+pule: mbedtls_sha256_init(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 0 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 52 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 1 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_starts(0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 64 (0x558042989170)
+
+
+pule: mbedtls_sha256_update:ilen = 32 (0x558042989170)
+
+
+pule: mbedtls_sha256_finish(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x558042989170)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6300ff0)
+
+
+pule: mbedtls_ccm_free(0x558042987de0)
+
+
+pule: mbedtls_aes_free(0x558042988850)
+
+
+pule: mbedtls_ccm_free(0x5580429887b0)
+
+
+pule: mbedtls_aes_free(0x5580429889c0)
+
+
+pule: mbedtls_ccm_init(0x5580429887b0)
+
+
+pule: mbedtls_ccm_init(0x558042987de0)
+
+
+pule: mbedtls_ccm_setkey(0x5580429887b0)
+
+pule: mbedtls_aes_init(0x55804298b9a0)
+
+
+pule: mbedtls_aes_setkey_enc(0x55804298b9a0)
+
+
+pule: mbedtls_ccm_setkey(0x558042987de0)
+
+pule: mbedtls_aes_init(0x55804298bb50)
+
+
+pule: mbedtls_aes_setkey_enc(0x55804298bb50)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6301100)
+client state: 15
+client state: 16
+ ok
+    [ Protocol is TLSv1.3 ]
+    [ Ciphersuite is TLS_AES_128_CCM_SHA256 ]
+    [ Key Exchange Mode is ECDHE-ECDSA ]
+    [ Record expansion (outgoing) is 5 ]
+    [ Record expansion (incoming) is 5 ]
+  . Verifying peer X.509 certificate... ok
+  . Peer certificate information    ...
+cert. version     : 1
+serial number     : 14:25:67:8A:09:BD:93:52:20:A9:6C:3E:BC:CA:B4:DB:0A:8C:6F:E7
+issuer name       : CN=CA
+subject name      : CN=localhost
+issued  on        : 2020-09-25 06:25:28
+expires on        : 2030-09-23 06:25:28
+signed using      : ECDSA with SHA256
+EC key size       : 256 bits
+
+  > Write to server:
+
+pule: mbedtls_ccm_encrypt_and_tag(0x5580429887b0):length = 35 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_encrypt_and_tag(0x5580429887b0):length = 35 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+ 35 bytes written in 1 fragments
+
+GET / HTTP/1.0
+Extra-header: 
+
+
+  < Read from server:
+
+pule: mbedtls_ccm_auth_decrypt(0x558042987de0):length = 136 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_auth_decrypt(0x558042987de0):length = 136 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298bb50):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298bb50):size = 16
+ 135 bytes read
+
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<h2>mbed TLS Test Server</h2>
+<p>Successful connection using: TLS_AES_128_CCM_SHA256</p>
+  . Closing the connection...
+
+pule: mbedtls_ccm_encrypt_and_tag(0x5580429887b0):length = 3 add_len = 5 tag_len=16
+
+
+pule: mbedtls_ccm_star_encrypt_and_tag(0x5580429887b0):length = 3 add_len = 5 tag_len=16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_aes_crypt_ecb-enc-(0x55804298b9a0):size = 16
+
+
+pule: mbedtls_internal_aes_encrypt(0x55804298b9a0):size = 16
+ done
+
+
+pule: mbedtls_ecdh_free(0x558042986cb8)
+
+
+pule: mbedtls_ccm_free(0x5580429887b0)
+
+
+pule: mbedtls_aes_free(0x55804298b9a0)
+
+
+pule: mbedtls_ccm_free(0x558042987de0)
+
+
+pule: mbedtls_aes_free(0x55804298bb50)
+
+
+pule: mbedtls_aes_free(0x7ffcc6301ad8)
+
+
+pule: mbedtls_sha256_free(0x7ffcc6301da4)
