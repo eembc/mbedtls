@@ -68,4 +68,23 @@ gprof ./ssl/ssl_client2 gmon.out > analysis.txt
 
 By default, `vim` should have syntax highlighting enabled for the analysis file, making it easier to read. The first table in the analysis file is the heatmap, followed by the static call charts. There is also a help file written into the analysis, which helps explain how to read the tables.
 
+# Frida
 
+There is an easier way to trace the code using [Frida](https://frida.re/). This does not require any recompilation or extra instrumentation. Instead, it dynamically hooks the SSL client program and extracts both temporal and static code behavior, which is then parsed by a new python parser.
+
+% pip3 install frida
+% ./launch_server_tls1_3.bash &
+% ./launch_client_tls1_3_frida.bash > log.txt 
+% fg
+% ^C
+% ./process_frida_trace.py log.txt
+
+## Notes on using Frida
+
+1. If the function is small, it might be optimized out and not have a symbol. It is unlikely this will happen because in general the functions we trace are quite large. Be aware of this.
+
+2. Detecting client state change involves navigating a native structure's bytes. See the comments in the trace. If the SSL structure changes, this might break.
+
+3. It is possible call parameters for some functions might change and break something we expect to be there, say, the number of bytes in a SHA update. Be aware of this.
+
+4. Frida is fussy. If it breaks, this whole methodology goes out the window and we need to revert to the old-school `#define` trace implementation.

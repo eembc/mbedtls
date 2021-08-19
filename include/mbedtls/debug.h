@@ -255,7 +255,7 @@ void mbedtls_debug_printf_ecdh( const mbedtls_ssl_context *ssl, int level,
                                 mbedtls_debug_ecdh_attr attr );
 #endif
 
-#if 1 /* EE_DEBUG */
+#if 0 /* EE_DEBUG */
 #   define EE_OP_CTX( op, ctx ) { \
         printf( "\nee{\"op\": \"%s\", \"ctx\": \"%p\"}\n", \
             op, ctx ); \
@@ -276,6 +276,12 @@ void mbedtls_debug_printf_ecdh( const mbedtls_ssl_context *ssl, int level,
         printf( "\nee{\"prim\": \"%s\",\"op\": \"%s\",\"ctx\": \"%p\",\"bytes\": %d}\n", \
             prim, op, ctx, bytes ); \
     }
+#else
+#   define EE_OP_CTX( op, ctx ) {}
+#   define EE_OP_CTX_CTX( op, ctx, ctx2 ) {}
+#   define EE_PRIM_OP_CTX( prim, op, ctx ) {}
+#   define EE_PRIM_OP_CTX_CTX( prim, op, ctx, ctx2 ) {}
+#   define EE_PRIM_OP_CTX_BYTES( prim, op, ctx, bytes ) {}
 #endif
 
 #ifdef __cplusplus
