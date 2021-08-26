@@ -14,6 +14,8 @@ frida -f  \
 	crt_file=./certs/client.crt \
 	key_file=./certs/client.key \
 	-l mbedtls-trace.js \
+	-q \
+	-o frida.log \
 	--no-pause
 
 

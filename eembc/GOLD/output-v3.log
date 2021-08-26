@@ -697,8 +697,9 @@ message: {'type': 'send', 'payload': '{"dir":"enter","prim":"mbedtls_sha256_upda
 message: {'type': 'send', 'payload': '{"dir":"exit","prim":"mbedtls_sha256_update_ret","retval":"0x0"}'} data: None
 message: {'type': 'send', 'payload': '{"dir":"enter","prim":"mbedtls_sha256_update_ret","arg0":"0x559f1603fa00","arg1":"0x7ffeffbcf4d8","arg2":"0x20"}'} data: None
 message: {'type': 'send', 'payload': '{"dir":"exit","prim":"mbedtls_sha256_update_ret","retval":"0x0"}'} data: None
-message: done
- {'type': 'send', 'payload': '{"dir":"enter","prim":"mbedtls_sha256_update_ret","arg0":"0x559f1603fa00","arg1":"0x559f1603fac0","arg2":"0x40"}'} data: None
+message: {'type': 'send', 'payload': '{"dir":"enter","prim":"mbedtls_sha256_update_ret","arg0":"0x559f1603fa00","arg1":"0x559f1603fac0","arg2":"0x40"}'} data: None
+done
+ 
 message: {'type': 'send', 'payload': '{"dir":"exit","prim":"mbedtls_sha256_update_ret","retval":"0x0"}'} data: None
 message: {'type': 'send', 'payload': '{"dir":"enter","prim":"mbedtls_sha256_update_ret","arg0":"0x559f1603fa00","arg1":"0x7ffeffbcf050","arg2":"0x20"}'} data: None
 message: {'type': 'send', 'payload': '{"dir":"exit","prim":"mbedtls_sha256_update_ret","retval":"0x0"}'} data: None
