@@ -240,7 +240,7 @@ class CTraceProcessor:
     def process_line(self, text):
         """ Call the correct parse based on the type of trace """
         trace = json.loads(text)
-        print(trace)
+        #print(trace)
         self.parsers.parse(trace)
 
     def post_event (self, alias, n, tag):
