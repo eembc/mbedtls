@@ -72,12 +72,14 @@ By default, `vim` should have syntax highlighting enabled for the analysis file,
 
 There is an easier way to trace the code using [Frida](https://frida.re/). This does not require any recompilation or extra instrumentation. Instead, it dynamically hooks the SSL client program and extracts both temporal and static code behavior, which is then parsed by a new python parser.
 
+```
 % pip3 install frida
 % ./launch_server_tls1_3.bash &
 % ./launch_client_tls1_3_frida.bash > log.txt 
 % fg
 % ^C
 % ./process_frida_trace.py log.txt
+```
 
 ## Notes on using Frida
 
