@@ -292,7 +292,7 @@
 {'dir': 'enter', 'prim': 'mbedtls_sha256_free', 'arg0': '0x559f1603f760', 'arg1': '0x6dc47d8d', 'arg2': '0x18bb2a8a'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_free', 'retval': '0x559f1603f760'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_clone', 'arg0': '0x7ffeffbcfe00', 'arg1': '0x559f1603d828', 'arg2': '0x559f1603d828'}
-Warning: cloning existing context: 0x7ffeffbcfe00 into 0x559f1603d828
+clone 0x559f1603d828 -> 0x7ffeffbcfe00
 {'dir': 'exit', 'prim': 'mbedtls_sha256_clone', 'retval': '0x7ffeffbcfe00'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x559f1603f870', 'arg1': '0x0', 'arg2': '0x559f1603f870'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x559f1603f870'}
@@ -407,7 +407,6 @@ Warning: cloning existing context: 0x7ffeffbcfe00 into 0x559f1603d828
 {'dir': 'enter', 'prim': 'mbedtls_sha256_free', 'arg0': '0x559f1603dfd0', 'arg1': '0x44b8996a6ad554bc', 'arg2': '0xc'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_free', 'retval': '0x559f1603dfd0'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_free', 'arg0': '0x7ffeffbcfe00', 'arg1': '0x0', 'arg2': '0xc'}
-Warning: freeing context without clone/init: 0x7ffeffbcfe00
 {'dir': 'exit', 'prim': 'mbedtls_sha256_free', 'retval': '0x7ffeffbcfe00'}
 {'dir': 'enter', 'prim': 'mbedtls_ccm_init', 'arg0': '0x559f1603e690', 'arg1': '0x0', 'arg2': '0x48'}
 {'dir': 'exit', 'prim': 'mbedtls_ccm_init', 'retval': '0x559f1603e690'}
@@ -747,7 +746,8 @@ Warning: freeing context without clone/init: 0x7ffeffbcfe00
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x7ffeffbcfe00', 'arg1': '0x2c332e3120534c54', 'arg2': '0x6669726556657461'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x7ffeffbcfe00'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_clone', 'arg0': '0x7ffeffbcfe00', 'arg1': '0x559f1603d828', 'arg2': '0x559f1603d828'}
-Warning: cloning existing context: 0x7ffeffbcfe00 into 0x559f1603d828
+clone 0x559f1603d828 -> 0x7ffeffbcfe00
+Warning: cloning existing context: 0x559f1603d828 into 0x7ffeffbcfe00
 {'dir': 'exit', 'prim': 'mbedtls_sha256_clone', 'retval': '0x7ffeffbcfe00'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x7ffeffbcfd10', 'arg1': '0x82', 'arg2': '0x7ffeffbcffb0'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x7ffeffbcfd10'}
@@ -998,7 +998,8 @@ Warning: cloning existing context: 0x7ffeffbcfe00 into 0x559f1603d828
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x7ffeffbcfed0', 'arg1': '0x559f1603d8d8', 'arg2': '0x1'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x7ffeffbcfed0'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_clone', 'arg0': '0x7ffeffbcfed0', 'arg1': '0x559f1603d828', 'arg2': '0x559f1603d828'}
-Warning: cloning existing context: 0x7ffeffbcfed0 into 0x559f1603d828
+clone 0x559f1603d828 -> 0x7ffeffbcfed0
+Warning: cloning existing context: 0x559f1603d828 into 0x7ffeffbcfed0
 {'dir': 'exit', 'prim': 'mbedtls_sha256_clone', 'retval': '0x7ffeffbcfed0'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x559f1603fa00', 'arg1': '0x0', 'arg2': '0x559f1603fa00'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x559f1603fa00'}
@@ -1071,7 +1072,8 @@ Warning: cloning existing context: 0x7ffeffbcfed0 into 0x559f1603d828
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x7ffeffbcff20', 'arg1': '0x559f1603d8d8', 'arg2': '0x0'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x7ffeffbcff20'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_clone', 'arg0': '0x7ffeffbcff20', 'arg1': '0x559f1603d828', 'arg2': '0x559f1603d828'}
-Warning: cloning existing context: 0x7ffeffbcff20 into 0x559f1603d828
+clone 0x559f1603d828 -> 0x7ffeffbcff20
+Warning: cloning existing context: 0x559f1603d828 into 0x7ffeffbcff20
 {'dir': 'exit', 'prim': 'mbedtls_sha256_clone', 'retval': '0x7ffeffbcff20'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_free', 'arg0': '0x7ffeffbcff20', 'arg1': '0xe8e067aa', 'arg2': '0x11d44bca'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_free', 'retval': '0x7ffeffbcff20'}
@@ -1168,7 +1170,8 @@ Warning: cloning existing context: 0x7ffeffbcff20 into 0x559f1603d828
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x7ffeffbcfd70', 'arg1': '0x2c332e3120534c54', 'arg2': '0x6669726556657461'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x7ffeffbcfd70'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_clone', 'arg0': '0x7ffeffbcfd70', 'arg1': '0x559f1603d828', 'arg2': '0x559f1603d828'}
-Warning: cloning existing context: 0x7ffeffbcfd70 into 0x559f1603d828
+clone 0x559f1603d828 -> 0x7ffeffbcfd70
+Warning: cloning existing context: 0x559f1603d828 into 0x7ffeffbcfd70
 {'dir': 'exit', 'prim': 'mbedtls_sha256_clone', 'retval': '0x7ffeffbcfd70'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x7ffeffbcfc80', 'arg1': '0x82', 'arg2': '0x7ffeffbcff50'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x7ffeffbcfc80'}
@@ -1433,7 +1436,8 @@ Warning: cloning existing context: 0x7ffeffbcfd70 into 0x559f1603d828
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x7ffeffbcfe60', 'arg1': '0x559f1603d8d9', 'arg2': '0x0'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x7ffeffbcfe60'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_clone', 'arg0': '0x7ffeffbcfe60', 'arg1': '0x559f1603d828', 'arg2': '0x559f1603d828'}
-Warning: cloning existing context: 0x7ffeffbcfe60 into 0x559f1603d828
+clone 0x559f1603d828 -> 0x7ffeffbcfe60
+Warning: cloning existing context: 0x559f1603d828 into 0x7ffeffbcfe60
 {'dir': 'exit', 'prim': 'mbedtls_sha256_clone', 'retval': '0x7ffeffbcfe60'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x559f1603fa00', 'arg1': '0x0', 'arg2': '0x559f1603fa00'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x559f1603fa00'}
@@ -1484,7 +1488,8 @@ Warning: cloning existing context: 0x7ffeffbcfe60 into 0x559f1603d828
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x7ffeffbcfe60', 'arg1': '0x559f1603d8d9', 'arg2': '0x0'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x7ffeffbcfe60'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_clone', 'arg0': '0x7ffeffbcfe60', 'arg1': '0x559f1603d828', 'arg2': '0x559f1603d828'}
-Warning: cloning existing context: 0x7ffeffbcfe60 into 0x559f1603d828
+clone 0x559f1603d828 -> 0x7ffeffbcfe60
+Warning: cloning existing context: 0x559f1603d828 into 0x7ffeffbcfe60
 {'dir': 'exit', 'prim': 'mbedtls_sha256_clone', 'retval': '0x7ffeffbcfe60'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x559f1603fa00', 'arg1': '0x0', 'arg2': '0x559f1603fa00'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x559f1603fa00'}
@@ -1555,7 +1560,7 @@ Warning: cloning existing context: 0x7ffeffbcfe60 into 0x559f1603d828
 {'dir': 'exit', 'prim': 'mbedtls_internal_aes_encrypt', 'retval': '0x0'}
 {'dir': 'exit', 'prim': 'mbedtls_ccm_star_encrypt_and_tag', 'retval': '0x0'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_clone', 'arg0': '0x7ffeffbcfda0', 'arg1': '0x559f1603d828', 'arg2': '0x559f1603d828'}
-Warning: cloning existing context: 0x7ffeffbcfda0 into 0x559f1603d828
+clone 0x559f1603d828 -> 0x7ffeffbcfda0
 {'dir': 'exit', 'prim': 'mbedtls_sha256_clone', 'retval': '0x7ffeffbcfda0'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_init', 'arg0': '0x559f1603fa00', 'arg1': '0x0', 'arg2': '0x559f1603fa00'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_init', 'retval': '0x559f1603fa00'}
@@ -1574,7 +1579,6 @@ Warning: cloning existing context: 0x7ffeffbcfda0 into 0x559f1603d828
 {'dir': 'enter', 'prim': 'mbedtls_sha256_free', 'arg0': '0x559f1603fa00', 'arg1': '0x7ffeffbcfbb0', 'arg2': '0x20'}
 {'dir': 'exit', 'prim': 'mbedtls_sha256_free', 'retval': '0x559f1603fa00'}
 {'dir': 'enter', 'prim': 'mbedtls_sha256_free', 'arg0': '0x7ffeffbcfda0', 'arg1': '0x0', 'arg2': '0x0'}
-Warning: freeing context without clone/init: 0x7ffeffbcfda0
 {'dir': 'exit', 'prim': 'mbedtls_sha256_free', 'retval': '0x7ffeffbcfda0'}
 {'dir': 'enter', 'prim': 'mbedtls_ccm_free', 'arg0': '0x559f1603e690', 'arg1': '0x0', 'arg2': '0x559f14d181cf'}
 {'dir': 'enter', 'prim': 'mbedtls_aes_free', 'arg0': '0x559f1603f100', 'arg1': '0x0', 'arg2': '0x559f14d182cb'}
@@ -1700,7 +1704,7 @@ alias,                          type,        context:,    -1,     0,     1,     
 00006,                           sha,  0x7ffeffbd0b54,    32,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00007,                           sha,  0x7ffeffbcfd30,    32,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00008,                         aes/E,  0x7ffeffbcfb00,   336,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
-00009,                           sha,  0x559f1603d828,      ,      ,   163,   117,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
+00009,                           sha,  0x559f1603d828,      ,      ,   163,   117,      ,      ,      ,    15,   300,    80,    36,      ,   298,    80,    36,    10,      ,      ,      ,      ,      ,
 00010,                          ecdh,  0x559f1603d568,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,     1,      ,      ,      ,      ,      ,
 00011,                           sha,  0x559f1603dec0,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   192,      ,      ,      ,      ,      ,
 00012,                           sha,  0x7ffeffbcfbd0,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,     0,      ,      ,      ,      ,      ,
@@ -1709,7 +1713,6 @@ alias,                          type,        context:,    -1,     0,     1,     
 00015,                           sha,  0x7ffeffbcfbd0,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,     0,      ,      ,      ,      ,      ,
 00016,                           sha,  0x559f1603f650,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   210,      ,      ,      ,      ,      ,
 00017,                           sha,  0x559f1603f760,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   192,      ,      ,      ,      ,      ,
-00018,                           sha,  0x559f1603d828,      ,      ,      ,      ,      ,      ,      ,    15,   300,      ,      ,      ,      ,      ,      ,    10,      ,      ,      ,      ,      ,
 00019,                           sha,  0x559f1603f870,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   215,      ,      ,      ,      ,      ,
 00020,                           sha,  0x559f1603f980,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   215,      ,      ,      ,      ,      ,
 00021,                           sha,  0x559f1603dfd0,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   213,      ,      ,      ,      ,      ,
@@ -1725,17 +1728,13 @@ alias,                          type,        context:,    -1,     0,     1,     
 00031,                       ecdsa/v,  0x7ffeffbcf990,      ,      ,      ,      ,      ,      ,      ,      ,     1,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00032,                     sha/BLOCK,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,  1988,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00033,                     sha/BLOCK,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,  2052,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
-00035,                           sha,  0x559f1603d828,      ,      ,      ,      ,      ,      ,      ,      ,      ,    80,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00036,                           sha,  0x7ffeffbcfd10,      ,      ,      ,      ,      ,      ,      ,      ,      ,   130,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00037,                       ecdsa/v,  0x7ffeffbcfd30,      ,      ,      ,      ,      ,      ,      ,      ,      ,     1,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00038,                     sha/BLOCK,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,  2052,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00039,                     sha/BLOCK,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,  2052,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
-00041,                           sha,  0x559f1603d828,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,    36,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00042,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   179,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00043,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   179,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
 00044,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   192,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,
-00046,                           sha,  0x559f1603d828,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   298,      ,      ,      ,      ,      ,      ,      ,      ,
-00048,                           sha,  0x559f1603d828,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,    80,      ,      ,      ,      ,      ,      ,      ,
 00049,                           sha,  0x7ffeffbcfc80,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   130,      ,      ,      ,      ,      ,      ,      ,
 00050,                       ecdsa/s,  0x7ffeffbcfcd0,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,     1,      ,      ,      ,      ,      ,      ,      ,
 00051,                     sha/BLOCK,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,  1539,      ,      ,      ,      ,      ,      ,      ,
@@ -1748,7 +1747,6 @@ alias,                          type,        context:,    -1,     0,     1,     
 00060,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   179,      ,      ,      ,      ,      ,      ,
 00061,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   179,      ,      ,      ,      ,      ,      ,
 00062,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   192,      ,      ,      ,      ,      ,      ,
-00064,                           sha,  0x559f1603d828,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,    36,      ,      ,      ,      ,      ,      ,
 00065,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   179,      ,      ,      ,      ,      ,      ,
 00066,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   179,      ,      ,      ,      ,      ,      ,
 00067,                           sha,  0x559f1603fa00,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,      ,   192,      ,      ,      ,      ,      ,      ,

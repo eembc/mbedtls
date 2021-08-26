@@ -25,7 +25,7 @@ class CAliasTable:
             del self.context_to_alias[pointer_string]
         else:
             print("Warning: freeing context without clone/init: %s" % pointer_string)
-    def clone (self, source_pointer, dest_pointer):
+    def clone (self, dest_pointer, source_pointer):
         if dest_pointer in self.context_to_alias:
             print("Warning: cloning existing context: %s into %s" % (source_pointer, dest_pointer))
         self.base_add(dest_pointer)
