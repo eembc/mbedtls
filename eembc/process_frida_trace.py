@@ -237,13 +237,7 @@ class CTraceProcessor:
             for line in file:
                 self.process_line(line.strip())
 
-    def process_line(self, line):
-        # Note: messages MIGHT appear in the middle of another line
-        found = re.match(r"^.*message: {.*'(.*?)'.*$", line)
-        if found:
-            self.process_one_trace(found[1])
-
-    def process_one_trace(self, text):
+    def process_line(self, text):
         """ Call the correct parse based on the type of trace """
         trace = json.loads(text)
         print(trace)

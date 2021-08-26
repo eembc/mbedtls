@@ -75,11 +75,13 @@ There is an easier way to trace the code using [Frida](https://frida.re/). This 
 ```
 % pip3 install frida
 % ./launch_server_tls1_3.bash &
-% ./launch_client_tls1_3_frida.bash > log.txt 
+% ./launch_client_tls1_3_frida.bash
 % fg
 % ^C
-% ./process_frida_trace.py log.txt
+% ./process_frida_trace.py frida.log
 ```
+
+The JavaScript trace file opens the `frida.log` file, the name is hardcoded.
 
 ## Notes on using Frida
 

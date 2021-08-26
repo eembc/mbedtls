@@ -1,3 +1,5 @@
+const log = new File('frida.log', 'w')
+
 const hookup = {
 
     'mbedtls_aes_init': 1,
@@ -58,7 +60,8 @@ imps.forEach(x => {``
                     arg1: args[1],
                     arg2: args[2],
                 }
-                send(JSON.stringify(obj))
+                log.write(JSON.stringify(obj))
+                log.write('\n')
             },
             onLeave(retval) {
                 let obj = {
@@ -66,7 +69,8 @@ imps.forEach(x => {``
                     prim: x.name,
                     retval
                 }
-                send(JSON.stringify(obj))
+                log.write(JSON.stringify(obj))
+                log.write('\n')
             }
         })
     }
@@ -86,7 +90,8 @@ imps.forEach(x => {``
                     arg1: args[1],
                     arg2: args[2],
                 }
-                send(JSON.stringify(obj))
+                log.write(JSON.stringify(obj))
+                log.write('\n')
             },
             onLeave(retval) {
                 let obj = {
@@ -94,7 +99,8 @@ imps.forEach(x => {``
                     prim: x.name,
                     retval
                 }
-                send(JSON.stringify(obj))
+                log.write(JSON.stringify(obj))
+                log.write('\n')
             }
         })
     }
