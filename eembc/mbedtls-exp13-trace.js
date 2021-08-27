@@ -12,6 +12,14 @@ const hookup = {
     'mbedtls_internal_aes_encrypt': 1,
     'mbedtls_internal_aes_decrypt': 1,
 
+    'mbedtls_chacha20_init': 1,
+    'mbedtls_chacha20_free': 1,
+    'mbedtls_chacha20_update': 1,
+
+    'mbedtls_poly1305_init': 1,
+    'mbedtls_poly1305_free': 1,
+    'mbedtls_poly1305_update': 1,
+
     'mbedtls_ccm_init': 1,
     'mbedtls_ccm_free': 1,
     'mbedtls_ccm_star_encrypt_and_tag': 1,

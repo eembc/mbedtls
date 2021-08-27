@@ -106,6 +106,38 @@ class CParserLibrary:
         alias = self.trace_processor.aliases.get_alias(ctx)
         self.trace_processor.post_event(alias, 16, "aes/D")
 
+    # ChaCha20 Functions
+
+    def mbedtls_chacha20_init(self, payload):
+        self.helper_add_ctx(payload, '_chch20')
+
+    def mbedtls_chacha20_free(self, payload):
+        self.helper_remove_ctx(payload)
+
+    def mbedtls_chacha20_update(self, payload):
+        if payload['dir'] != 'enter':
+            return
+        ctx = payload['arg0']
+        numbytes = int(payload['arg1'], 16)
+        alias = self.trace_processor.aliases.get_alias(ctx)
+        self.trace_processor.post_event(alias, numbytes, 'chch')
+
+    # POLY1305 Functions
+
+    def mbedtls_poly1305_init(self, payload):
+        self.helper_add_ctx(payload, '_poly')
+
+    def mbedtls_poly1305_free(self, payload):
+        self.helper_remove_ctx(payload)
+
+    def mbedtls_poly1305_update(self, payload):
+        if payload['dir'] != 'enter':
+            return
+        ctx = payload['arg0']
+        numbytes = int(payload['arg2'], 16)
+        alias = self.trace_processor.aliases.get_alias(ctx)
+        self.trace_processor.post_event(alias, numbytes, 'poly')
+
     # AES/CCM functions
 
     def mbedtls_ccm_init(self, payload):
@@ -278,25 +310,26 @@ def main ():
             i,
             trace_processor.aliases.get_context(i),
             trace_processor.aliases.alias_description[i]))
+
     print("\nState usage matrix")
     print("------------------")
-    print("% 5s,% 30s,% 15s:," % ("alias", "type", "context"), end="")
+    print("% 5s,% 15s,% 15s:," % ("alias", "type", "context"), end="")
     for i in range (-1, trace_processor.max_state):
-        print("% 6d," % i, end="")
+        print("% 5d," % i, end="")
     print("")
 
     for alias in sorted(trace_processor.scoreboard):
-        print("%05d,% 30s,% 16s," % (
+        print("%05d,% 15s,% 16s," % (
             int(alias),
             trace_processor.aliases.description(alias),
             trace_processor.aliases.get_context(alias)),
             end="")
         for i in range(-1, trace_processor.max_state):
             if i in trace_processor.scoreboard[alias]:
-                print("% 6s," % str(
+                print("% 5s," % str(
                     trace_processor.scoreboard[alias][i]), end="")
             else:
-                print("% 6s," % " ", end="")
+                print("% 5s," % " ", end="")
         print()
 
 if __name__ == '__main__':
