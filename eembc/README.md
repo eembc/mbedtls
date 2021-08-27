@@ -91,4 +91,4 @@ The JavaScript trace file opens the `frida.log` file, the name is hardcoded.
 
 3. It is possible call parameters for some functions might change and break something we expect to be there, say, the number of bytes in a SHA update. Be aware of this.
 
-4. Frida is fussy. If it breaks, this whole methodology goes out the window and we need to revert to the old-school `#define` trace implementation.
+4. If Frida--a third party tool--breaks for some reason, this whole methodology goes out the window and we need to revert to the old-school `#define` trace implementation.
