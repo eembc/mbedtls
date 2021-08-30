@@ -268,7 +268,7 @@ class CTraceProcessor:
         self.parsers = CParserLibrary(self)
         self.current_state = -1
         self.scoreboard = {}
-        self.max_state = -100
+        self.states_seen = []
 
     def process_file(self, file_name):
         with open(file_name, 'r') as file:
@@ -294,8 +294,8 @@ class CTraceProcessor:
     
     def change_state (self, state):
         self.current_state = state
-        if state > self.max_state:
-            self.max_state = state
+        if state not in self.states_seen:
+            self.states_seen.append(state)
 
 def main ():
     if len(sys.argv) < 2:
@@ -314,7 +314,7 @@ def main ():
     print("\nState usage matrix")
     print("------------------")
     print("% 5s,% 15s,% 15s:," % ("alias", "type", "context"), end="")
-    for i in range (-1, trace_processor.max_state):
+    for i in sorted(trace_processor.states_seen):
         print("% 5d," % i, end="")
     print("")
 
@@ -324,7 +324,7 @@ def main ():
             trace_processor.aliases.description(alias),
             trace_processor.aliases.get_context(alias)),
             end="")
-        for i in range(-1, trace_processor.max_state):
+        for i in sorted(trace_processor.states_seen):
             if i in trace_processor.scoreboard[alias]:
                 print("% 5s," % str(
                     trace_processor.scoreboard[alias][i]), end="")
